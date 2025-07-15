@@ -1,6 +1,6 @@
 # Tests are defined here
-from ukp_project_template import BaseClass
-from ukp_project_template.subpackage import SubPackageClass
+from tacl2025_ood_eval_self_rationalization import BaseClass
+from tacl2025_ood_eval_self_rationalization.subpackage import SubPackageClass
 
 def test_template():
     assert True

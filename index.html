@@ -4,25 +4,18 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="Self-Rationalization in the Wild: A Large Scale Out-of-Distribution Evaluation on NLI-related tasks">
+  <meta property="og:title" content="A Large Scale Out-of-Distribution Evaluation of Self-Rationalization on NLI-related tasks"/>
+  <meta property="og:description" content="Self-Rationalization, Out-of-Distribution"/>
+  <meta property="og:url" content="https://jingyng.github.io/tacl2025-ood-eval-self-rationalization/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>Self-Rationalization in the Wild: A Large Scale Out-of-Distribution Evaluation on NLI-related tasks</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -160,6 +153,30 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">How much data is needed for generalization?</h2>
+      <h2 class="subtitle has-text-justified">
+        Is it important to always have more data to fine-tune your model? Not really. In our study, we fined-tuned two open-source models on two data sources, and found that with only 384 samples, the model already reached similar performance as fine-tuning on 50,000 samples.<br>
+        <span style="font-weight:bold;"> What about data quality?   Are they important too? </span>
+        Unfortunately no! 😧 We found that different sample selection methods have much smaller effect compare to data size and source.
+      </h2>
+      <!-- Image + caption -->
+      <figure class="image">
+        <img  src="static/images/F1_plot-new.png"
+              alt="F1‑score of fine‑tuned models versus training‑set size"
+              style="max-width:100%; height:auto;">
+        <figcaption class="has-text-centered is-size-6 mt-2">
+          Out‑of‑distribution performance of fine‑tuned models on 19 datasets
+          covering NLI, fact‑checking and hallucination detection.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
@@ -172,7 +189,7 @@
           
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/SY2J0n8Qcq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/SY2J0n8Qcq0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
